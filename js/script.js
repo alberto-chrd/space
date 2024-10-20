@@ -1,8 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector("form");
-    form.addEventListener("submit", function(event) {
-        event.preventDefault();
-        alert("Il tuo messaggio è stato inviato!");
+document.addEventListener('scroll', function () {
+    const elements = document.querySelectorAll('.fade-in');
+    const windowHeight = window.innerHeight;
+
+    elements.forEach(function (element) {
+        const elementTop = element.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            element.classList.add('visible');
+        } else {
+            element.classList.remove('visible');
+        }
     });
 });
 

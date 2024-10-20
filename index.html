@@ -3,39 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Mio Sito Moderno</title>
+    <title>Il Mio Sito con Animazioni</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Benvenuto sul mio sito moderno!</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Chi sono</a></li>
-                <li><a href="#contact">Contatti</a></li>
-            </ul>
-        </nav>
+        <h1>Benvenuto al mio sito animato!</h1>
     </header>
 
     <section id="home">
-        <h2>Home</h2>
-        <p>Questo è il mio sito web, costruito con GitHub Pages.</p>
+        <div class="fade-in">
+            <h2>Home</h2>
+            <p>Questa sezione apparirà man mano che scorri la pagina.</p>
+            <button>Scopri di più</button>
+        </div>
     </section>
 
     <section id="about">
-        <h2>Chi sono</h2>
-        <p>Mi chiamo [Nome] e sono un appassionato di sviluppo web.</p>
+        <div class="fade-in">
+            <h2>Chi sono</h2>
+            <p>Mi chiamo [Nome] e sono un appassionato di sviluppo web.</p>
+        </div>
     </section>
 
     <section id="contact">
-        <h2>Contatti</h2>
-        <form>
-            <input type="text" name="name" placeholder="Il tuo nome" required>
-            <input type="email" name="email" placeholder="La tua email" required>
-            <textarea name="message" placeholder="Il tuo messaggio"></textarea>
-            <button type="submit">Invia</button>
-        </form>
+        <div class="fade-in">
+            <h2>Contatti</h2>
+            <form>
+                <input type="text" name="name" placeholder="Il tuo nome" required>
+                <input type="email" name="email" placeholder="La tua email" required>
+                <textarea name="message" placeholder="Il tuo messaggio"></textarea>
+                <button type="submit">Invia</button>
+            </form>
+        </div>
     </section>
 
     <footer>
